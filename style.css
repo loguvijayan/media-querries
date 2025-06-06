@@ -1,0 +1,245 @@
+*
+{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+.head
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.fodors.com/wp-content/uploads/2020/10/DCDestination__HERO_shutterstock_1288595899-1200x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.logo
+{ 
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
+.navbar
+{
+    width: 85%;
+    height: 18%;
+    /*background-color: lightpink;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button
+{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.content 
+{
+    color: aqua;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;    
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.sidebar
+{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(84dog,skyblue);
+    position: absolute;
+    top: 0;
+    right: 0;;
+}
+.social-link img, .useful-link img
+{
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.menu
+{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.social-link
+{
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.useful-link
+{
+    position: absolute;
+    bottom: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+.bubbles img
+{
+    width: 50px;
+    animation: sample 7s linear infinite; 
+}
+.bubbles
+{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+@keyframes sample
+{
+    0%  
+       {
+        transform: translateY(0);
+        opacity: 0;
+       }
+   50%  
+       {
+        opacity: 1;
+       }
+   70% {
+        opacity: 1;
+       }
+   100% 
+       {
+        transform: translateY(-90vh);
+        opacity: 0;
+       }
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 1s;
+    width: 40px;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubbles img:nth-child(3)
+{
+    animation-delay: 1s;
+    width: 35px;
+}
+.bubbles img:nth-child(4)
+{
+    animation-delay: 3.5s;
+    width: 45px;
+}
+.bubbles img:nth-child(5)
+{
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 6 s;
+    width: 40px;
+}
+
+/* portrait--Mobile phone*/
+
+@media screen and (min-width:450px) and (max-width:600px)
+{ 
+    .head
+    {
+    background-image: url(background\ image.2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    }
+    .content h1
+    {
+    color: cornflowerblue;
+    font-size: 60px;
+    }
+    .sidebar
+    {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(84dog,skyblue);
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    }
+    .menu
+    {
+    position: absolute;
+    left: 15px;
+    }
+    .social-link
+    {
+    position: absolute;
+    margin-left: 140px;
+    display: flex;
+    }
+    .useful-link
+    {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    display: flex;
+    }
+}
+
+/* tablet*/  
+
+@media screen and  (min-width:600px) and (max-width:900px)
+{
+    .head
+   {
+    background-image: url(background\ image.3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 50px;
+    overflow: hidden;
+}
+  .content h1
+    {
+    color: dodgerblue;
+    font-size: 100px;
+    }
+    .sidebar
+    {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(84dog,skyblue);
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    }
+    .menu
+    {
+    position: absolute;
+    left: 20px;
+    }
+    .social-link
+    {
+    position: absolute;
+    margin-left: 140px;
+    display: flex;
+    }
+    .useful-link
+    {
+    position: absolute;
+    right: 0 ;
+    }
+}
